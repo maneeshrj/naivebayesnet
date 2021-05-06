@@ -18,7 +18,7 @@ public class StrokeDataLoader {
 	
 	List<String> variables = Arrays.asList("gender", "hypertension", "heart_disease", "ever_married", "Residence_type");
 	List<String> ones    = Arrays.asList("1", "true", "yes", "Urban", "Male");
-	List<String> zeroes  = Arrays.asList("0", "false", "no", "Rural", "female");
+	List<String> zeroes  = Arrays.asList("0", "false", "no", "Rural", "Female");
 	
 	List<Map<String, String>> testRecords;
 	List<String> testLabels;
@@ -108,7 +108,7 @@ public class StrokeDataLoader {
 					items.put(val, (count + 1));
 					
 				}
-		    }
+		    	}
 			
 			if(lblKey == -1) continue;
 			String lblVal = record.get("stroke");
